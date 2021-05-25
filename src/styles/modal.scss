@@ -2,7 +2,9 @@
   background-color: #8593ac;
   color: white;
 }
-
+.modal-header {
+  background-image: url("../assets/img/portfolio/modal/at_header_2.png");
+}
 .modal-body {
   text-align: center;
 }
@@ -13,4 +15,10 @@
 
 .modal-text {
   width: 70%;
+  margin: auto;
+}
+
+.modal-panel {
+  height: 80%;
+  width: 100%;
 }

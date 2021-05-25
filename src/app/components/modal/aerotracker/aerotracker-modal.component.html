@@ -1,32 +1,59 @@
 <div class="modal-container">
     <div class="modal-header"> 
-        <h4>AeroTracker</h4>
+        <h4><strong>AeroTracker</strong></h4>
         <button type="button" class="btn btn-light btn-sm" aria-label="Close" (click)="activeModal.dismiss('dismiss')">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body" align="center">
-        <img class="modal-header-image" src="assets/img/portfolio/at_header_2.png"/>
+        <!-- <img class="modal-header-image" src="assets/img/portfolio/modal/at_header_2.png"/> -->
 
         <h3>Overview</h3>
-        <p class="modal-text">This is a live flight tracker webapp, tracks aircrafts such as airplanes, helicopters, and drones
+        <p class="modal-text" align="center">
+            This is a live flight tracker webapp, tracks aircrafts such as airplanes, helicopters, and drones
             It allows a user to create zones - receive notifications if the zone detects anything - filter
             aircraft by altitude or speed, and other things relating to aircraft.
             This interface integrates hardware such as radars and ADS-B, which is what allows it to display
             aircraft that this hardware is detecting.
-            <br>
+        </p>
+
+        <hr class="divider divider-light" />
+
+        <p class="modal-text" align="center">
             The target audience for this project is anywhere from individual people wanting to protect their garden
             to enterprise busineses wanting to monitor and have protection from illegal drones.
             Government bodies have also shown high interest in this product.
-            <br>
+        </p>
+        
+        <hr class="divider divider-light" />
+
+        <p class="modal-text" align="center">
             This product aims to provide individuals and bisnesses with full and comprehensive view of everything that flies,
             inorder to enable a safe sharing of our skies in the future.
             "With full situational awareness, the skies are unlocked"
-            <br>
+        </p>
+
+        <hr class="divider divider-light" />
+
+        <p class="modal-text" align="center">
             "AeroTracker is the only flight tracking app in the world to fully integrate planes and drones on one interface, and give full situational awareness in real-time to all who need it."
-            <br>
+           
             My role for this project was to be the Front End developer working in a small team alongside a senior developer
             and a backend developer.
+            I would have to report back to the senior developer each time I completed a Jira ticket
+            There were no assigned designers so the design of the webapp was decided by the CEO or as a joint effort amongst the dev team.
+        </p>  
+
+        <hr class="divider divider-light" />
+        <p class="modal-text" align="center">
+            Third party libraries - added cookie consent: ngx-cookieconsent, leaflet was used for the map features
+            - hammerjs for swiping mobile panels up and down
+            <br>
+            What I learned whilst doing this project 
         </p>
+        <div class="modal-panel">
+            <img class="modal-phones" src="assets/img/portfolio/modal/phone2.png" />
+            <img class="modal-phones" src="assets/img/portfolio/modal/phone3.png" />
+        </div>
     </div>
 </div>
