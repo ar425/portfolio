@@ -19,10 +19,10 @@ export class HomeComponent {
     ngOnInit(){}
 
     openUspaceModal(){
-        this.modalService.open(UspaceModalComponent, { backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
+        this.modalService.open(UspaceModalComponent, { size: 'xl', backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
     }
 
     openAeroTrackerModal(){
-        this.modalService.open(AerotrackerModalComponent, { backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
+        this.modalService.open(AerotrackerModalComponent, { size: 'xl', backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
     }
 }
