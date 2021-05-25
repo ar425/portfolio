@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'portfolio-uspace-modal',
-    templateUrl: './uspace-modal.component.html'
+    selector: 'portfolio-aerotracker-modal',
+    templateUrl: './aerotracker-modal.component.html'
 })
 
-export class UspaceModalComponent {
+export class AerotrackerModalComponent {
 
     constructor(
         public activeModal: NgbActiveModal,
