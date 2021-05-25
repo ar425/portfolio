@@ -5,7 +5,7 @@ import { HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angul
 
 import * as Hammer from 'hammerjs';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './home/home.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
