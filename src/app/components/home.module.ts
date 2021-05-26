@@ -7,6 +7,7 @@ import * as Hammer from 'hammerjs';
 
 import { HomeComponent } from './home/home.component';
 import { AerotrackerModalComponent } from './modal/aerotracker/aerotracker-modal.component';
+import { UspaceModalComponent } from './modal/uspace/uspace-modal.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -17,7 +18,8 @@ export class MyHammerConfig extends HammerGestureConfig {
 @NgModule({
     declarations: [
         HomeComponent,
-        AerotrackerModalComponent
+        AerotrackerModalComponent,
+        UspaceModalComponent
     ],
     imports: [
         CommonModule,
@@ -26,7 +28,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     ],
     exports: [
         HomeComponent,
-        AerotrackerModalComponent
+        AerotrackerModalComponent,
+        UspaceModalComponent
     ],
     providers: [
         {

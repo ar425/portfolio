@@ -2,15 +2,16 @@
   background-color: #8593ac;
   color: white;
 }
-.modal-header {
+.modal-header-at {
   background-image: url("../assets/img/portfolio/modal/at_header_2.png");
 }
-.modal-body {
-  text-align: center;
+.modal-header-us {
+  background-image: url("../assets/img/portfolio/modal/us-header.png");
+  color: black;
 }
 
-.modal-header-image {
-  width: 100%;
+.modal-body {
+  text-align: center;
 }
 
 .modal-text {
@@ -25,4 +26,31 @@
 
 .modal-phones {
   max-height: 500px;
+}
+
+.modal-icon {
+  max-height: 100px;
+  padding: 10px;
+}
+
+.modal-comps {
+  max-height: 400px;
+}
+
+.nav-item {
+  margin-right: 20px !important;
+  font-size: 0.9em;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #8593ac !important;
+}
+
+.tab-container {
+  padding: 10px;
+  margin-block: 20px;
 }
