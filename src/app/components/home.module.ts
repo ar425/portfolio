@@ -5,7 +5,10 @@ import { HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angul
 
 import * as Hammer from 'hammerjs';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './home/home.component';
+import { AerotrackerModalComponent } from './modal/aerotracker/aerotracker-modal.component';
+import { PortfolioModalComponent } from './modal/portfolio/portfolio-modal.component'
+import { UspaceModalComponent } from './modal/uspace/uspace-modal.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -15,7 +18,10 @@ export class MyHammerConfig extends HammerGestureConfig {
 
 @NgModule({
     declarations: [
-        HomeComponent
+        HomeComponent,
+        AerotrackerModalComponent,
+        UspaceModalComponent,
+        PortfolioModalComponent
     ],
     imports: [
         CommonModule,
@@ -23,7 +29,10 @@ export class MyHammerConfig extends HammerGestureConfig {
         HammerModule,
     ],
     exports: [
-        HomeComponent
+        HomeComponent,
+        AerotrackerModalComponent,
+        UspaceModalComponent,
+        PortfolioModalComponent
     ],
     providers: [
         {
