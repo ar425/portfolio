@@ -1,1 +1,105 @@
+.img-self {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  padding: 20px;
+}
+
+.profile-border {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 47px;
+  margin-inline: auto;
+  padding: 6px;
+  max-width: 400px;
+  height: 500px;
+  width: 60%;
+  box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+.profile-border img {
+  vertical-align: top;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.profile-border .border {
+  position: absolute;
+  opacity: 0.5;
+}
+.profile-border .border:before,
+.profile-border .border:after,
+.profile-border .border div:before,
+.profile-border .border div:after {
+  background-color: #eabcac;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.profile-border .border:before,
+.profile-border .border:after {
+  width: 0;
+  height: 1px;
+}
+.profile-border .border div:before,
+.profile-border .border div:after {
+  width: 1px;
+  height: 0;
+}
+.profile-border .border.one {
+  left: 0;
+  top: 0;
+  right: 12px;
+  bottom: 12px;
+}
+.profile-border .border.one:before,
+.profile-border .border.one div:before {
+  left: 0;
+  top: 0;
+}
+.profile-border .border.one:after,
+.profile-border .border.one div:after {
+  bottom: 0;
+  right: 0;
+}
+.profile-border .border.two {
+  left: 12px;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+}
+.profile-border .border.two:before,
+.profile-border .border.two div:before {
+  right: 0;
+  top: 0;
+}
+.profile-border .border.two:after,
+.profile-border .border.two div:after {
+  bottom: 0;
+  left: 0;
+}
+.profile-border a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+.profile-border:hover .border:before,
+.profile-border.hover .border:before,
+.profile-border:hover .border:after,
+.profile-border.hover .border:after {
+  width: 100%;
+}
+.profile-border:hover .border div:before,
+.profile-border.hover .border div:before,
+.profile-border:hover .border div:after,
+.profile-border.hover .border div:after {
+  height: 100%;
+}
+
 @import "./modal.scss";
+@import "./portfolio.scss";

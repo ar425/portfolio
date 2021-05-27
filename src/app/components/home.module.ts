@@ -7,6 +7,7 @@ import * as Hammer from 'hammerjs';
 
 import { HomeComponent } from './home/home.component';
 import { AerotrackerModalComponent } from './modal/aerotracker/aerotracker-modal.component';
+import { PortfolioModalComponent } from './modal/portfolio/portfolio-modal.component'
 import { UspaceModalComponent } from './modal/uspace/uspace-modal.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
@@ -19,7 +20,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     declarations: [
         HomeComponent,
         AerotrackerModalComponent,
-        UspaceModalComponent
+        UspaceModalComponent,
+        PortfolioModalComponent
     ],
     imports: [
         CommonModule,
@@ -29,7 +31,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     exports: [
         HomeComponent,
         AerotrackerModalComponent,
-        UspaceModalComponent
+        UspaceModalComponent,
+        PortfolioModalComponent
     ],
     providers: [
         {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AerotrackerModalComponent } from '../modal/aerotracker/aerotracker-modal.component';
+import { PortfolioModalComponent } from '../modal/portfolio/portfolio-modal.component';
 import { UspaceModalComponent } from "../modal/uspace/uspace-modal.component";
 
 
@@ -24,5 +25,9 @@ export class HomeComponent {
 
     openAeroTrackerModal(){
         this.modalService.open(AerotrackerModalComponent, { size: 'xl', backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
+    }
+
+    openPortfolioModal(){
+        this.modalService.open(PortfolioModalComponent, { size: 'xl', backdrop: 'static', centered: true, backdropClass: 'light-modal-backdrop', windowClass: 'dark-modal' });
     }
 }

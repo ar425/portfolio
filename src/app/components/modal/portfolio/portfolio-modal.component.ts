@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'portfolio-uspace-modal',
-    templateUrl: './uspace-modal.component.html'
+    selector: 'portfolio-portfolio-modal',
+    templateUrl: './portfolio-modal.component.html'
 })
 
-export class UspaceModalComponent {
+export class PortfolioModalComponent {
 
     @Input()
     tab: number = 0;
@@ -21,7 +21,7 @@ export class UspaceModalComponent {
         this.isCollapsed = true;
         this.tab = tab;
 
-        let route = '/uspace-modal/';
+        let route = '/portfolio-modal/';
 
         switch(tab) {
 
