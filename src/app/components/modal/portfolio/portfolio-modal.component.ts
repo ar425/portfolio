@@ -38,10 +38,6 @@ export class PortfolioModalComponent {
                 break;
 
             case 3:
-                route = `${route}my-role`;
-                break;
-
-            case 4:
                 route = `${route}technologies`;
                 break;
 

@@ -31,15 +31,19 @@
                 <h3>Overview</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    U-Space is a user interface to detect drones based off of hardware such as radars, Radio Frequencies, and PTZ cameras.
+                    U-Space is a user interface to detect drones based off of hardware such as radars, Radio Frequencies, and PTZ cameras. Created for cpni as machine interface for 
+                    detection hardware.
                     <br>
                     This project was created under the CPNI specifications. It was less focused on design and more focused on functionality, as it incorperated a lot of hardware.
                     <br>
                     CPNI stands for Centre for the Protection of National Infrastructure. They are the UK government’s National Technical Authority for physical and personnel protective security.
                 </p>
-                <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_2.png" />
-                <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_4.png" />
-            </div>
+                <div class="modal-panel">
+                    <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_2.png" />
+                    &nbsp;&nbsp;
+                    <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_4.png" />
+                </div> 
+        </div>
         </ng-container>
 
         <ng-container *ngIf="tab == 1">
@@ -51,6 +55,7 @@
                     <br>
                     CPNI had very specific and detailed specifications, we followed a PDF file to ensure we had met all of the criteria.
                 </p>
+                <img style="max-height: 300px; padding-block: 40px;" src="assets/img/portfolio/modal/cpni.png" />
             </div>
         </ng-container>
 
@@ -71,7 +76,7 @@
                     How UAS activity was presented to the oprator - had to be clear
                 </p>
                 <div class="modal-panel">
-                    <img class="modal-comps" src="assets/img/portfolio/modal/Portfolio_3.png" />
+                    <img style="max-height: 300px;" src="assets/img/portfolio/modal/Portfolio_3.png" />
                 </div>
             </div>
         </ng-container>
@@ -82,11 +87,14 @@
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
 
-                    My role for this project was to be the Front End developer working in a small team alongside a senior developer
-                    and a backend developer.
-                    I would have to report back to the senior developer each time I completed a Jira ticket
+                    My role for this project was to be the Front End developer working in a small team alongside a senior developer. Due to the small size of 
+                    the team, i would sometimes be asked to do some tasks for the back end.
+                    <br>
+                    I would have to report back to the senior developer each time I completed a Jira ticket, he would then review my work and either tell me to fix
+                    something or merge it into the main branch 
                     There were no assigned designers so the design of the webapp was decided by the CEO or as a joint effort amongst the dev team.
-                </p>  
+                </p> 
+                <img style="max-height: 420px" src="assets/img/portfolio/modal/Portfolio_1.png" /> 
             </div>
         </ng-container>
 
@@ -97,13 +105,28 @@
                 <p class="modal-text" align="center">
                     Third party libraries 
                     Other technologies
+                    leaflet, geolocation
+                    part of the requirements was to have a local map tiles - access without internet.
+                    normally such files are very large, but by using docker/docker compose we were able to save on a lot of memory space.
+                    react hooks, redux, jest
+                    postgres, redis, django, nginx, celery, lodash, redux thunk, react-toastify, tailwind for quick iteration
+                    react-datepicker - was simpler than to create our own datepicker
+                    downloadjs, to download the csv file
+                    immer, axios, fontawesome, sass 
+                    docker compose to run the files, there were many different components
+                    python scripts to control the hardware - ptz camera shell script - could use this through the terminal to reset the camera or move it.
+                    the cameras ip address could also be accessed through a browser
                     <br>
-                    What I learned whilst doing this project 
+                    What I learned whilst doing this project :
+                    strengthened my knowledge of frontend development as well as gain 
+                    a lot of valuable experience working with backend - I now have a very good understanding of full stack
                 </p> 
                 <div class="modal-panel">
-                    <img class="modal-icon" src="assets/icons/reactjs.png" />
-                    <img class="modal-icon" src="assets/icons/docker.png" />
-                    <img class="modal-icon" src="assets/icons/python.png" />
+                   <a href="https://reactjs.org/"><img class="modal-icon"  src="assets/icons/reactjs.png" /></a>
+                    &nbsp;
+                    <a href="https://www.docker.com/"><img class="modal-icon" src="assets/icons/docker.png" /></a>
+                    &nbsp;
+                    <a href="https://www.python.org/"><img class="modal-icon" src="assets/icons/python.png" /></a>
                 </div>
             </div>
         </ng-container>
