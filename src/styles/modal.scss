@@ -22,6 +22,7 @@
 .modal-panel {
   height: 80%;
   width: 100%;
+  padding-block: 70px;
 }
 
 .modal-phones {
@@ -35,6 +36,10 @@
 
 .modal-comps {
   max-height: 400px;
+}
+
+.modal-list {
+  list-style-type: none;
 }
 
 .nav-item {

@@ -1,6 +1,6 @@
 <div class="modal-container">
     <div class="modal-header modal-header-at"> 
-        <h4><strong>AeroTracker</strong></h4>
+        <h4><strong>Portfolio</strong></h4>
         <button type="button" class="btn btn-light btn-sm" aria-label="Close" (click)="activeModal.dismiss('dismiss')">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -12,16 +12,10 @@
                     <button class="nav-link" [ngClass]="{'active': tab == 0}" (click)="setTab(0)" placement="bottom">Overview</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom">Target Audience</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom"> Aims & Objectives</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom"> Aims & Objectives</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 3}" (click)="setTab(3)" placement="bottom">My Role</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 4}" (click)="setTab(4)" placement="bottom">Technologies</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom">Technologies</button>
                 </li>
             </ul>
         </div>
@@ -31,75 +25,50 @@
                 <h3>Overview</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    AeroTracker is a live flight tracker webapp which tracks aircrafts such as airplanes, helicopters, and drones.
+                    Created this portfolio to demonstrate my skills, projects I have worked on, but I also found it to be a very fun project.
                     <br>
-                    It allows a user to create zones - receive notifications if the zone detects anything - filter
-                    aircraft by altitude or speed, and other things relating to aircraft detection.
+                    I normally struggle for ideas as to what to create - in my spare time - but as soon as I had a solid idea it all came very naturally to me.
                     <br>
-                    This interface integrates hardware such as radars and ADS-B, which is what allows it to display
-                    aircraft that this hardware is detecting.
+                    I used my knowledge of previous projects to create this.
+                    I aimed for a simple and intiutive design
                 </p>
-                <img class="modal-comps" src="assets/img/portfolio/modal/amanda-001.png" />
-                <img class="modal-comps" src="assets/img/portfolio/modal/amanda-002.png" />
+                <img class="modal-comps" src="assets/img/portfolio/modal/aeroTracker-1.png" />
+                <img class="modal-comps" src="assets/img/portfolio/modal/aeroTracker-2.png" />
             </div>
         </ng-container>
-
         <ng-container *ngIf="tab == 1">
-            <div class="tab-container">
-                <h3>Target Audience</h3> 
-                <hr class="divider divider-light" />
-                <p class="modal-text" align="center">
-                    The target audience for this project is anywhere from individual people wanting to protect their garden
-                    to enterprise busineses wanting to monitor and have protection from illegal drones.
-                    Government bodies have also shown high interest in this product.
-                </p>
-            </div>
-        </ng-container>
-
-        <ng-container *ngIf="tab == 2">
             <div class="tab-container">
                 <h3>Aims & Objectives</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    This product aims to provide individuals and bisnesses with full and comprehensive view of everything that flies,
-                    inorder to enable a safe sharing of our skies in the future.
-                    "With full situational awareness, the skies are unlocked"
+                    Aims to inform employers of my skills and thought processes
+                    Also allows me to explore more front end coding practices and be creative with my work
+                    create a scalabe design
                 </p>
-                <div class="modal-panel">
-                    <img class="modal-phones" src="assets/img/portfolio/modal/amanda-004.png" />
-                </div>
             </div>
         </ng-container>
-        
-        <ng-container *ngIf="tab == 3"> 
-            <div class="tab-container">
-                <h3>My Role</h3>
-                <hr class="divider divider-light" />
-                <p class="modal-text" align="center">
-                    "AeroTracker is the only flight tracking app in the world to fully integrate planes and drones on one interface, and give full situational awareness in real-time to all who need it."
-                
-                    My role for this project was to be the Front End developer working in a small team alongside a senior developer
-                    and a backend developer.
-                    I would have to report back to the senior developer each time I completed a Jira ticket
-                    There were no assigned designers so the design of the webapp was decided by the CEO or as a joint effort amongst the dev team.
-                </p>  
-            </div>
-        </ng-container>
-
-        <ng-container *ngIf="tab == 4">
+        <ng-container *ngIf="tab == 2">
             <div class="tab-container">
                 <h3>Technologies</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    Third party libraries - added cookie consent: ngx-cookieconsent, leaflet was used for the map features
-                    - hammerjs for swiping mobile panels up and down
+                    This project was created with:
+                    &#8226; Angular.JS
+                    &#8226; Bootstrap
+
+                    Used wireframing for design ideas
+
                     <br>
                     What I learned whilst doing this project 
+                    new css tricks for animation
+                    <a href="https://github.com/ar425/portfolio">Source Code</a>
                 </p> 
                 <div class="modal-panel">
-                    <img class="modal-icon" src="assets/icons/angular.png" />
-                    <img class="modal-icon" src="assets/icons/nodejs.png" />
-                    <img class="modal-icon" src="assets/icons/wordpress.png" />
+                    <a href="https://angular.io/"><img class="modal-icon" src="assets/icons/angular.png" /></a>
+                    &nbsp;
+                    <a href="https://github.com/"><img class="modal-icon" src="assets/icons/github.png" /></a>
+                    &nbsp;
+                    <a href="https://getbootstrap.com/"><img class="modal-icon" src="assets/icons/bootstrap.png" /></a>
                 </div>
             </div>
         </ng-container>

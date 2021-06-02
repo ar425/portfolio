@@ -28,20 +28,11 @@ export class PortfolioModalComponent {
             case 0:
                 route = `${route}overview`;
                 break;
-
             case 1:
-                route = `${route}target-audience`;
-                break;
-
-            case 2:
                 route = `${route}aims&objectives`;
                 break;
 
-            case 3:
-                route = `${route}my-role`;
-                break;
-
-            case 4:
+            case 2:
                 route = `${route}technologies`;
                 break;
 
