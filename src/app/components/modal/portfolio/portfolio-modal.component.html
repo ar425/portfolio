@@ -12,13 +12,10 @@
                     <button class="nav-link" [ngClass]="{'active': tab == 0}" (click)="setTab(0)" placement="bottom">Overview</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom">Target Audience</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom"> Aims & Objectives</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom"> Aims & Objectives</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 3}" (click)="setTab(3)" placement="bottom">Technologies</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom">Technologies</button>
                 </li>
             </ul>
         </div>
@@ -35,49 +32,41 @@
                     I used my knowledge of previous projects to create this.
                     I aimed for a simple and intiutive design
                 </p>
-                <img class="modal-comps" src="assets/img/portfolio/modal/amanda-001.png" />
-                <img class="modal-comps" src="assets/img/portfolio/modal/amanda-002.png" />
+                <img class="modal-comps" src="assets/img/portfolio/modal/aeroTracker-1.png" />
+                <img class="modal-comps" src="assets/img/portfolio/modal/aeroTracker-2.png" />
             </div>
         </ng-container>
-
         <ng-container *ngIf="tab == 1">
-            <div class="tab-container">
-                <h3>Target Audience</h3> 
-                <hr class="divider divider-light" />
-                <p class="modal-text" align="center">
-                    The target audience for this project is for any prospecting employers, and also as a reference for myself of what I have achieved.
-                    <br>
-                    A platform I can keep building on.
-                </p>
-            </div>
-        </ng-container>
-
-        <ng-container *ngIf="tab == 2">
             <div class="tab-container">
                 <h3>Aims & Objectives</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
                     Aims to inform employers of my skills and thought processes
                     Also allows me to explore more front end coding practices and be creative with my work
+                    create a scalabe design
                 </p>
             </div>
         </ng-container>
-        <ng-container *ngIf="tab == 3">
+        <ng-container *ngIf="tab == 2">
             <div class="tab-container">
                 <h3>Technologies</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
+                    This project was created with:
+                    &#8226; Angular.JS
+                    &#8226; Bootstrap
+
                     Used wireframing for design ideas
-                    Bootstrap for the initial template
-                    angular 
+
                     <br>
                     What I learned whilst doing this project 
                     new css tricks for animation
+                    <a href="https://github.com/ar425/portfolio">Source Code</a>
                 </p> 
                 <div class="modal-panel">
                     <a href="https://angular.io/"><img class="modal-icon" src="assets/icons/angular.png" /></a>
                     &nbsp;
-                    <a href="https://nodejs.org/en/"><img class="modal-icon" src="assets/icons/nodejs.png" /></a>
+                    <a href="https://github.com/"><img class="modal-icon" src="assets/icons/github.png" /></a>
                     &nbsp;
                     <a href="https://getbootstrap.com/"><img class="modal-icon" src="assets/icons/bootstrap.png" /></a>
                 </div>

@@ -12,16 +12,13 @@
                     <button class="nav-link" [ngClass]="{'active': tab == 0}" (click)="setTab(0)" placement="bottom">Overview</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom">Target Audience</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 1}" (click)="setTab(1)" placement="bottom"> Aims & Objectives</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom"> Aims & Objectives</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 2}" (click)="setTab(2)" placement="bottom">My Role</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 3}" (click)="setTab(3)" placement="bottom">My Role</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" [ngClass]="{'active': tab == 4}" (click)="setTab(4)" placement="bottom">Technologies</button>
+                    <button class="nav-link" [ngClass]="{'active': tab == 3}" (click)="setTab(3)" placement="bottom">Technologies</button>
                 </li>
             </ul>
         </div>
@@ -31,95 +28,104 @@
                 <h3>Overview</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    U-Space is a user interface to detect drones based off of hardware such as radars, Radio Frequencies, and PTZ cameras. Created for cpni as machine interface for 
-                    detection hardware.
-                    <br>
-                    This project was created under the CPNI specifications. It was less focused on design and more focused on functionality, as it incorperated a lot of hardware.
+                    U-Space is a user interface created for CPNI as a machine interface for detection hardware such as: radards, RF sensors, and PTZ cameras.
+                    This hardware is used to detect drones, and the software allows a user to see these detections and choose what action they might want to take
+                    from this information.
                     <br>
                     CPNI stands for Centre for the Protection of National Infrastructure. They are the UK government’s National Technical Authority for physical and personnel protective security.
-                </p>
-                <div class="modal-panel">
-                    <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_2.png" />
-                    &nbsp;&nbsp;
-                    <img style="max-height: 300px" src="assets/img/portfolio/modal/Portfolio_4.png" />
-                </div> 
-        </div>
-        </ng-container>
-
-        <ng-container *ngIf="tab == 1">
-            <div class="tab-container">
-                <h3>Target Audience</h3> 
-                <hr class="divider divider-light" />
-                <p class="modal-text" align="center">
-                    Aside from the specifications and CPNI there was no other target audience.
+                    CPNI provided very detailed specifications in which they wanted this project to be competed. It was less focused on design and more focused on functionality, as it incorperated a lot of hardware.
+                    For mor information about what CPNI is visit 
+                    <a href="https://www.cpni.gov.uk/countering-threats-unmanned-aerial-systems-0">www.cpni.gov.uk</a>
                     <br>
-                    CPNI had very specific and detailed specifications, we followed a PDF file to ensure we had met all of the criteria.
+                    
                 </p>
                 <img style="max-height: 300px; padding-block: 40px;" src="assets/img/portfolio/modal/cpni.png" />
-            </div>
+        </div>
         </ng-container>
-
-        <ng-container *ngIf="tab == 2">
+        <ng-container *ngIf="tab == 1">
             <div class="tab-container">
                 <h3>Aims & Objectives</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-                    CPNI had very specific and detailed specifications, we followed a PDF file to ensure we had met all of the criteria.
+                    The overall aim of this project was to pass CPNI's test criteria in order to be included in the CPNI Catalogue of Security Equipment.
+                    They provided a PDF file with details of how to pass these test criteria, which we followed in extreme detail.
                     <br>
-                    Need to meet CPNI standard and meet the test criteria
+                    The user interface had to be intiutive and easy to use so that the operator wouldn't have any issues in using the system.
+                    The user interface also needed to have the ability to export the tracked aircraft data - this would include things such as the
+                    latitude and longitude of the aircraft, the altitude, time of detection, duration of detection and so on.
                     <br>
-                    Operator usability - had to be intiutive so that the operator wouldn't have any issues using the system
-                    <br>
-                    Have ability to export data, have a good human machine interface
-                    <br>
-                    Reason for wanting to pass CPNI
-                    How UAS activity was presented to the oprator - had to be clear
+                    The aircraft activity had to be presented in a clear way, so that the user could easily understand what the hardware was picking up.
                 </p>
                 <div class="modal-panel">
-                    <img style="max-height: 300px;" src="assets/img/portfolio/modal/Portfolio_3.png" />
-                </div>
+                    <img style="max-height: 300px" src="assets/img/portfolio/modal/uspace-2.png" />
+                    &nbsp;&nbsp;
+                    <img style="max-height: 300px" src="assets/img/portfolio/modal/uspace-4.png" />
+                </div> 
             </div>
         </ng-container>
         
-        <ng-container *ngIf="tab == 3"> 
+        <ng-container *ngIf="tab == 2"> 
             <div class="tab-container">
                 <h3>My Role</h3>
                 <hr class="divider divider-light" />
                 <p class="modal-text" align="center">
-
-                    My role for this project was to be the Front End developer working in a small team alongside a senior developer. Due to the small size of 
-                    the team, i would sometimes be asked to do some tasks for the back end.
+                    My role for this project was to be the Front End developer working in a small team alongside a senior developer, However, due
+                    to the small size of the team, I would sometimes be asked to do some tasks for the back end.
                     <br>
-                    I would have to report back to the senior developer each time I completed a Jira ticket, he would then review my work and either tell me to fix
-                    something or merge it into the main branch 
-                    There were no assigned designers so the design of the webapp was decided by the CEO or as a joint effort amongst the dev team.
+                    Throughout this project we did a lot of peer coding; through this I was able to gain a lot of experience regarding the inegration
+                    of the hardware, as well as local and cloud databases, and the interaction between the back end and front end.
+                    <br>
+                    We used the agile workflow in order to keep track of the project. I would have to report back to the senior developer each time I completed a Jira ticket,
+                    he would then review my work and give feedback on it.  
+                    <br>
+                    There were no assigned designers so the design of the user interface was based more around the functionality of hardware and other specifications
+                    that CPNI had mentioned.
+                    <br>
+                    My involvement for this project was happening from August 2020 - January 2021.
                 </p> 
-                <img style="max-height: 420px" src="assets/img/portfolio/modal/Portfolio_1.png" /> 
+                <img style="max-height: 420px" src="assets/img/portfolio/modal/uspace-1.png" /> 
             </div>
         </ng-container>
 
-        <ng-container *ngIf="tab == 4">
+        <ng-container *ngIf="tab == 3">
             <div class="tab-container">
                 <h3>Technologies</h3>
                 <hr class="divider divider-light" />
-                <p class="modal-text" align="center">
-                    Third party libraries 
-                    Other technologies
-                    leaflet, geolocation
-                    part of the requirements was to have a local map tiles - access without internet.
-                    normally such files are very large, but by using docker/docker compose we were able to save on a lot of memory space.
-                    react hooks, redux, jest
-                    postgres, redis, django, nginx, celery, lodash, redux thunk, react-toastify, tailwind for quick iteration
-                    react-datepicker - was simpler than to create our own datepicker
-                    downloadjs, to download the csv file
-                    immer, axios, fontawesome, sass 
-                    docker compose to run the files, there were many different components
-                    python scripts to control the hardware - ptz camera shell script - could use this through the terminal to reset the camera or move it.
-                    the cameras ip address could also be accessed through a browser
+                <p>
+                    This project was created with:
+                </p>
+                <ul class="modal-list">
+                    <li>React.JS / React hooks</li>
+                    <li>Redux</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Postgres</li>
+                    <li>Redis</li>
+                    <li>Nginx</li>
+                    <li>Docker / Docker Compose</li>
+                    <li>Leaflet</li>
+                    <li>AWS</li>
+                </ul>
+                    
+                <p>
+                    Third party libraries: 
+                </p>
+                <ul class="modal-list">
+                    <li>react-toastify - for notifications of new detections</li>
+                    <li>tailwind - for quick iteration</li>
+                    <li>react-datepicker - it was simpler than creating a datepicker from scratch</li>
+                    <li>downloadjs - to download the flight data</li>
+                    <li>fontawesome - for some fun icons</li>
+                </ul>
+                <p>
+                    Python scripts were created to control the hardware, for example the PTZ camera shell script.
+                    The script could be run through the terminal to move or reset the camera.
+
                     <br>
-                    What I learned whilst doing this project :
-                    strengthened my knowledge of frontend development as well as gain 
-                    a lot of valuable experience working with backend - I now have a very good understanding of full stack
+                    What I learned through this project:
+
+                    I had the amazing opportunity to work with all of the technologies listed and get a much better
+                    understanding of coding in general, as well as embed good practices regarding the agile workflow.
                 </p> 
                 <div class="modal-panel">
                    <a href="https://reactjs.org/"><img class="modal-icon"  src="assets/icons/reactjs.png" /></a>
