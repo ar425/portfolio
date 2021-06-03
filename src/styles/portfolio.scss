@@ -27,3 +27,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.service-container {
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+}
