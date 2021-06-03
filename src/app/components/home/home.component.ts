@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AerotrackerModalComponent } from '../modal/aerotracker/aerotracker-modal.component';
@@ -12,6 +14,12 @@ import { UspaceModalComponent } from "../modal/uspace/uspace-modal.component";
 })
 
 export class HomeComponent {
+
+    icons: any = {
+        email: faEnvelope,
+        linkedin: faLinkedin,
+   
+    }
 
     constructor (
         private modalService: NgbModal,

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -16,8 +17,9 @@ import { MainComponent } from './main.component';
     MainComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    FontAwesomeModule,
     HomeModule,
     NgbModule
   ],
