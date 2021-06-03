@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 
@@ -27,6 +28,7 @@ export class MyHammerConfig extends HammerGestureConfig {
         CommonModule,
         NgbModule,
         HammerModule,
+        FontAwesomeModule
     ],
     exports: [
         HomeComponent,

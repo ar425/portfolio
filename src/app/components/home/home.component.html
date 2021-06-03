@@ -72,18 +72,21 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Front-end Developer</h3>
-                        <p class="text-muted mb-0">languages: HTML, JavaScript, Sass, CSS, Dev Tools: Bootstrap, Github, Gitlab, Terminal </p>
+                        <h3 class="h4 mb-2">Front End Developer</h3>
+                        <p class="text-muted mb-0">languages: HTML, JavaScript, Sass, CSS, 
+                            Dev Tools: Bootstrap, Github, Gitlab, Terminal 
+                            Frameworks: Angular.JS, React.JS, React Hooks, Redux
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Back-end Developer</h3>
-                        <p class="text-muted mb-0">languages: Python, </p>
+                        <h3 class="h4 mb-2">Back End Developer</h3>
+                        <p class="text-muted mb-0">languages: Python, Frameworks: Django </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <!-- <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Ready to Publish</h3>
@@ -96,7 +99,7 @@
                         <h3 class="h4 mb-2">Made with Love</h3>
                         <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -136,28 +139,27 @@
             </div>
         </div>
     </div>
-    <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
-        <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-        </div>
-    </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">List socials/ways to contact me</p>
-                </div>
+        <div class="contact-container">
+            <div>
+                <h2>Let's Get In Touch!</h2>
+                <hr class="divider" />
             </div>
-  
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>+44 07476725695</div>
+            <div class="contact-icon" align="center">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/amanda-rieksti%C5%86a-bb9996195/">
+                        <fa-icon class="fa-2x" [icon]="icons.linkedin"></fa-icon>
+                    </a>
+                    <span>Amanda Riekstina</span>
+                </div>
+                <div class="icons">
+                    <fa-icon class="fa-2x" [icon]="icons.email"></fa-icon>
+                    <span>amanda.riekstina@yahoo.co.uk</span>
+                </div>
+                <div class="icons">
+                    <i class="bi-phone fs-2"></i>
+                    <span>+44 07476725695</span>
                 </div>
             </div>
         </div>
