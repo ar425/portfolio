@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faCropAlt, faEnvelope, faLanguage, faTools } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { AerotrackerModalComponent } from '../modal/aerotracker/aerotracker-modal.component';
@@ -18,7 +18,9 @@ export class HomeComponent {
     icons: any = {
         email: faEnvelope,
         linkedin: faLinkedin,
-   
+        language: faLanguage,
+        tools: faTools,
+        frame: faCropAlt
     }
 
     constructor (
